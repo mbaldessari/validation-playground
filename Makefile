@@ -8,3 +8,6 @@ validate: json
 
 json:
 	yq e secret.yaml -ojson -P > secret.json
+
+clean:
+	rm -f secret.json
