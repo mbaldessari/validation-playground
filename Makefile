@@ -7,7 +7,7 @@ validate: json
 	jsonschema --instance secret.json secret.schema
 
 json:
-	yq e secret.yaml -ojson -P > secret.json
+	yq e secret.yaml -j -P > secret.json
 
 clean:
 	rm -f secret.json
